@@ -1,0 +1,45 @@
+/*从底部到当前位置的动画*/
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+/*从顶部到当前位置的动画*/
+.pt-page-moveFromTop {
+    -webkit-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+@-webkit-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+/*从左到当前位置的动画*/
+.pt-page-moveFromLeft {
+    -webkit-animation: moveFromLeft .6s ease both;
+    animation: moveFromLeft .6s ease both;
+}
+@-webkit-keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+/*从右到当前位置的动画*/
+.pt-page-moveFromRight {
+    -webkit-animation: moveFromRight .6s ease both;
+    animation: moveFromRight .6s ease both;
+}
+@-webkit-keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
