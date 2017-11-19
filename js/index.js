@@ -58,6 +58,9 @@ $(function () {
     lastClass = nowClass;
     $(lastClass).find('.right').removeAttr('style')
     $(lastClass).find('.left').find('.leftItem').removeAttr('style')
+    $(lastClass).find('.left').find('.l_1').removeClass('pt-s4-l-1')
+    $(lastClass).find('.left').find('.l_2').removeClass('pt-s4-l-2')
+    $(lastClass).find('.left').find('.l_3').removeClass('pt-s4-l-3')
     //页面滚动到指定位置后，执行该页面的动画
     setTimeout(function () {
       itemMove(index);
@@ -100,7 +103,12 @@ $(function () {
         break;
       case 3:
         $(nowClass).find('.right').css(opacity_css)
-        $(nowClass).find('.left').find('.leftItem').css(x_css)
+        $(nowClass).find('.left').find('.l_1').addClass('pt-s4-l-1')
+        $(nowClass).find('.left').find('.l_2').addClass('pt-s4-l-2')
+        $(nowClass).find('.left').find('.l_3').addClass('pt-s4-l-3')
+        setTimeout(function () {
+          $(nowClass).find('.left').find('.leftItem').css('transform','translate(0,0)')
+        },2800)
         break;
       case 4:
         $(nowClass).find('.right').css(opacity_css)

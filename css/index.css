@@ -101,10 +101,84 @@
     opacity: 0;
 }
 .s4 .left .l_1 {
-    transform: translateX(325px);
+    transform: translate(325px,-1000px);
+}
+.s4 .left .l_2 {
+    transform: translate(0,-1000px);
 }
 .s4 .left .l_3 {
-    transform: translateX(-325px);
+    transform: translate(-325px,-1000px);
+}
+/*定义s4的动画*/
+.pt-s4-l-1 {
+    animation: move01 2s 0.8s;
+
+}
+.pt-s4-l-2 {
+    animation: move02 2s 0.8s;
+
+}
+.pt-s4-l-3 {
+    animation: move03 2s 0.8s;
+}
+@keyframes move01 {
+    0% {
+        transform: translate(325px,-1000px);
+    }
+    20% {
+        transform: translate(325px,0);
+    }
+    40% {
+        transform: translate(325px,-50px);
+    }
+    60% {
+        transform: translate(325px,0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+@keyframes move02 {
+    0% {
+        transform: translate(0,-1000px);
+    }
+
+    20% {
+        transform: translate(0,0);
+    }
+
+    40% {
+        transform: translate(0,-50px);
+    }
+
+    60% {
+        transform: translate(0,0);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
+@keyframes move03 {
+    0% {
+        transform: translate(-325px,-1000px);
+    }
+
+    20% {
+        transform: translate(-325px,0);
+    }
+
+    40% {
+        transform: translate(-325px,-50px);
+    }
+
+    60% {
+        transform: translate(-325px,0);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
 }
 .s5 {
     background-image: url('../img/s5.jpg');
